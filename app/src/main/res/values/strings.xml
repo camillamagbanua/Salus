@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Salus</string>
+    <string name="title_activity_fire_emergency">FireEmergency</string>
+    <string name="title_activity_splash">Splash</string>
+</resources>

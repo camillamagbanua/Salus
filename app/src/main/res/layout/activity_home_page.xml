@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomePage">
+
+    <Button
+        android:id="@+id/call911"
+        style="@style/AppTheme.Button"
+        android:layout_width="274dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="19dp"
+        android:drawableLeft="@drawable/baseline_phone_white_18dp"
+        android:onClick="process"
+        android:text="National emergency hotline" />
+
+    <ImageView
+        android:id="@+id/imgFire"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="86dp"
+        android:clickable="true"
+        android:onClick="fireOnClick"
+        app:srcCompat="@drawable/icon1" />
+
+    <ImageView
+        android:id="@+id/imgDisaster"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/imgFire"
+        android:layout_marginTop="204dp"
+        android:clickable="true"
+        android:cropToPadding="false"
+        android:onClick="DisasterOnClick"
+        app:srcCompat="@drawable/icon4" />
+
+    <ImageView
+        android:id="@+id/imgGov"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_alignTop="@+id/imgDisaster"
+        android:layout_centerHorizontal="true"
+        android:clickable="true"
+        android:onClick="GovernmentOnClick"
+        app:srcCompat="@drawable/icon5" />
+
+    <ImageView
+        android:id="@+id/imgMed"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_alignTop="@+id/imgFire"
+        android:layout_centerHorizontal="true"
+        android:clickable="true"
+        android:onClick="MedOnClick"
+        app:srcCompat="@drawable/icon2" />
+
+    <ImageView
+        android:id="@+id/imgCriminal"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_alignStart="@+id/imgCrisis"
+        android:layout_alignTop="@+id/imgFire"
+        android:clickable="true"
+        android:onClick="CriminalOnClick"
+        app:srcCompat="@drawable/icon3" />
+
+    <ImageView
+        android:id="@+id/imgCrisis"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/imgGov"
+        android:layout_marginEnd="29dp"
+        android:clickable="true"
+        android:onClick="CrisisOnClick"
+        app:srcCompat="@drawable/icon6" />
+
+    <TextView
+        android:id="@+id/ectxt1"
+        android:layout_width="107dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/textView13"
+        android:layout_marginEnd="14dp"
+        android:text="Emergency"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="91dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/entxt1"
+        android:layout_centerHorizontal="true"
+        android:text="Emergency"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="92dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/imgFire"
+        android:layout_alignTop="@+id/ectxt1"
+        android:layout_marginEnd="-6dp"
+        android:text="Emergency"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/entxt1"
+        android:layout_width="72dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/imgCriminal"
+        android:layout_below="@+id/imgFire"
+        android:text="Criminal"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="72dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imgFire"
+        android:layout_centerHorizontal="true"
+        android:text="Medical"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="72dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/imgCriminal"
+        android:layout_below="@+id/textView15"
+        android:text="Hotlines"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="72dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView15"
+        android:layout_centerHorizontal="true"
+        android:text="Hotlines"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="72dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/imgFire"
+        android:layout_below="@+id/textView15"
+        android:text="Relief"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imgGov"
+        android:layout_centerHorizontal="true"
+        android:text="Government"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="74dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/imgCriminal"
+        android:layout_below="@+id/imgGov"
+        android:text="Crisis"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="72dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/imgFire"
+        android:layout_below="@+id/imgGov"
+        android:text="Disaster"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="72dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/imgFire"
+        android:layout_below="@+id/imgFire"
+        android:text="Fire"
+        android:textAlignment="center" />
+
+    <ImageView
+        android:id="@+id/imgEContact"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_below="@+id/textView10"
+        android:layout_centerHorizontal="true"
+        android:clickable="true"
+        android:onClick="EContactsOnClick"
+        app:srcCompat="@drawable/icon7" />
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView24"
+        android:layout_centerHorizontal="true"
+        android:text="Contacts" />
+
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imgEContact"
+        android:layout_centerHorizontal="true"
+        android:text="Emergency" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="158dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="0dp"
+        app:srcCompat="@drawable/mountains" />
+
+</RelativeLayout>
