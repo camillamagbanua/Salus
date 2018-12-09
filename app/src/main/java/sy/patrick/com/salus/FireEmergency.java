@@ -18,7 +18,19 @@ public class FireEmergency extends AppCompatActivity {
     public void process(View v) {
         Intent i = null, chooser = null;
 
-        if(v.getId() == R.id.callbtn1) {
+        if (v.getId() == R.id.call911) {
+            i = new Intent(Intent.ACTION_DIAL);
+            i.setData(Uri.parse("tel:911"));
+            startActivity(i);
+        }
+
+        else if (v.getId() == R.id.call911) {
+            i = new Intent(Intent.ACTION_DIAL);
+            i.setData(Uri.parse("tel:911"));
+            startActivity(i);
+        }
+
+        else if(v.getId() == R.id.callbtn1) {
             i = new Intent(Intent.ACTION_DIAL);
             i.setData(Uri.parse("tel:023099645"));
             startActivity(i);
